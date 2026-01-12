@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design</title>
+    <style>
+        body{
+            border: 1px solid skyblue;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        .img-container{
+            display: flex;
+        }
+        .img-container img{
+            width: 100%;
+        }
+        .img-container div{
+            width: 50%;
+        }
+        @media screen and (max-width:576px){
+           .img-container{
+             flex-direction: column-reverse;
+           }
+           .img-container div{
+            width: 100%;
+           }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive website</h1>
+        <li>viewport meta tag</li>
+        <li>css relative unit</li>
+        <li>body maidth and horizontal center align</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </header>
+    <main>
+        <div class="img-container">
+            <div> 
+                 <img src="food.jpg" alt="">
+                 </div>
+            <div>
+                <img src="tiger.jpg" alt="">
+                </div>
+        
+        
+    </main>
+</body>
+</html>
